@@ -1,25 +1,96 @@
 <html>
+
 	<head>
+
+
 		<title>Student</title>
+<link rel="stylesheteet" href="style.css">
+<style>
+p.dotted {border-style: dotted;}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #c4854b;
+  padding: 20px;
+  text-align: center;
+}
+</style>
 	</head>
 
+
+<style>
+form {
+  border-radius: 5px;
+  background-color: #e39542;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #6e3500;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ff7b00;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: dotted;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ff7b00;
+}
+</style>
+
+
+
+
+
+<style>
+body {
+  background-color: #f7d6b2;
+}
+</style>
 	<body>
+
+<header>
 <a href="cuprins.html">Cuprins</a>
 		<h1>Nume: Sabiuta</h1>
 		<h2>Nume: Diana-Constantina</h2>
-		<h3>E-mail:sabiuta.fl.diana@student.utcluj.ro</h3>
+		<h3 class="color-red">E-mail:sabiuta.fl.diana@student.utcluj.ro</h3>
 
 		<img src="images\peisajj.jpg" width="300px" height="500px">
-<h5>Asteptari legate de educatie:</h5>
+</header>
+<h5><p class="dotted">Asteptari legate de educatie:</p></h5>
 
 <ul>
-<li>Să îmi îmbogățească cultura generală.</li>
+<li>Să îmi îmbogățească cultura general.</li>
 <li>Să mă ajute să dobândesc abilități cu adevarăt utile pentru un job.</li>
 <li>Să îmi formeze o anumită disciplină în organizarea timpului.</li>
 </ul>
 
 
 <table>
+
+
 
 
 <tr>
@@ -63,7 +134,7 @@
 
 </table>
 
-
+<header>
 <p> Hobby-uri: </p>
 
 <ul>
@@ -72,8 +143,33 @@
 <li>Ciclism</li>
 </ul>
 
+</header>
+
+<h3><p class="dotted">Spune ceva despre tine</p></h3>
+
+
+<h2>Chestionar pentru studenti</h2>
+
+<form action="/action_page.php">
+  <label for="fname">Prenume</label>
+  <input type="text" id="fname" name="firstname" placeholder="prenumele tau..">
+
+  <label for="lname">Nume</label>
+  <input type="text" id="lname" name="lastname" placeholder="numele tau de familie..">
+
+  <label for="country">Oras</label>
+  <select id="country" name="orasul tau">
+    <option value="cluj">Cluj</option>
+    <option value="suceava">Suceava</option>
+    <option value="bucuresti">Bucuresti</option>
+  </select>
+  
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
 
 	</body>
-
 </html>														                         
-
